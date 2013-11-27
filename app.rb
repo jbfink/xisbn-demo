@@ -2,6 +2,7 @@ require "sinatra"
 
 helpers do
 	def xisbn_fetch(xisbn)
+		return "You inputted #{xisbn}! Good for you."
 	end
 end
 

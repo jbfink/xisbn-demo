@@ -17,5 +17,6 @@ get '/' do
 end
 
 post '/render' do
+	@xisbn = params[:xisbn]
 	haml :"xisbn/render"
 end

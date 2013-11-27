@@ -15,3 +15,7 @@ end
 get '/' do
 	haml :"xisbn/index"
 end
+
+post '/render' do
+	haml :"xisbn/render"
+end

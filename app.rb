@@ -7,7 +7,7 @@ helpers do
 	def xisbn_fetch(xisbn)
 		item = JSON.load(open("http://xisbn.worldcat.org/webservices/xid/isbn/#{xisbn}?method=getEditions&format=json&fl=form,year,lang,ed"))
 		item["list"].each do |k|
-			puts k["isbn"]
+			"<p>#{k["isbn"]}</p>"
 		end
 		return "You inputted #{xisbn}! Good for you."
 	end
